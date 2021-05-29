@@ -1,0 +1,22 @@
+{
+  "name": "wayback-machine-site-map-link-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrekh/wayback-machine-site-map-link-extractor.git"
+  },
+  "author": "Alireza Esmikhani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrekh/wayback-machine-site-map-link-extractor/issues"
+  },
+  "homepage": "https://github.com/mrekh/wayback-machine-site-map-link-extractor#readme",
+  "dependencies": {
+    "xlsx": "^0.17.0"
+  }
+}

@@ -11,11 +11,11 @@ let outputWorkbook = workbook.Sheets[workbook.SheetNames[0]];
 fs.readFile("./input.txt", "utf-8", (err, data) => {
   if (err) throw err;
   data = data.match(/(?=https?).*?(?=['"])/gi);
-
+  
   data.forEach((e, i, data) => {
-    data[i] = [data[i].replace(/https:\/\/web\.archive\.org\/web\/\d*\//, "")];
+    data[i] = ["".concat("http://", data[i].replace(/https:\/\/web\.archive\.org\/web\/\d*\//, ""))];
   });
-
+  
   let ws_data = data;
   xlsx.utils.sheet_add_aoa(outputWorkbook, ws_data, { origin: {r: 1, c: 0} });
   xlsx.writeFile(workbook, "main.xlsx");

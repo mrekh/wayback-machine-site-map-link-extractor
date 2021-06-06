@@ -19,4 +19,5 @@ fs.readFile("./input.txt", "utf-8", (err, data) => {
   let ws_data = data;
   xlsx.utils.sheet_add_aoa(outputWorkbook, ws_data, { origin: {r: 1, c: 0} });
   xlsx.writeFile(workbook, "main.xlsx");
+  console.log("Let's enjoy! 🥳") // Final step :)
 })

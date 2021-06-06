@@ -5,7 +5,7 @@ Easily extract links from the site map section of Wayback Machine
 1. Installing [node.js](https://nodejs.org)
 2. Go to the site map section in Wayback Machine
 3. Press the F12 key
-4. Select the <svg> element of diagram
+4. Select the SVG element of diagram and copy it
 5. Open input.txt
 6. Paste SVG element and save file
 7. Open terminal at the downloaded folder
